@@ -5,6 +5,8 @@
 #include <linux/ip.h>
 #include <linux/tcp.h>
 
+#define PORT_BEFORE 3307
+#define PORT_AFTER 3306
 
 
 #define SWAP_ORDER_16(X) ( (((X) & 0xff00) >> 8) | (((X) & 0xff) << 8))
