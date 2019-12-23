@@ -47,7 +47,7 @@ int xdp_rewrite_port(struct xdp_md *ctx)
 
   if (tcph->dest == SWAP_ORDER_16(PORT_BEFORE)) {
     tcph->dest = SWAP_ORDER_16(PORT_AFTER);
-    unsigned long sum = SWAP_ORDER_16(tcph->check) + PORT_BEFORE + ((~PORT_AFTER & 0xffff) - 1);
+    unsigned long sum = SWAP_ORDER_16(tcph->check) + PORT_BEFORE + ((~PORT_AFTER & 0xffff) + 1);
     tcph->check = SWAP_ORDER_16(sum & 0xffff);
   }
   return XDP_PASS;
