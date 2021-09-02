@@ -1,7 +1,6 @@
 # xdp_rewrite_port
 
-XDPでTCPの宛先ポートを書き換えるサンプルです。以下のブログ記事のサンプルコードとなります。
-https://recruit.gmo.jp/engineer/jisedai/blog/xdp-packet-rewrite/
+XDPでTCPの宛先ポートを書き換えるサンプルです。
 
 ## Usage
 
